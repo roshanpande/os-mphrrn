@@ -30,9 +30,11 @@ Response ratio, R and hybrid priority, Hp are computed using equations (1) and (
 Processes with highest hybrid priority, Hp, will be executed next. After the execution of a burst time, a running process may be preempted if there is another process with a higher hybrid priority. In the event where multiple processes turn up with the highest hybrid priority, the system shall select the process with the earliest arrival time among those processes and then preempt the current running process. If the current running process turns out to be the process with the highest hybrid priority, it continues to run until a process with a higher hybrid priority is found.
 
 **PMHRRN Algorithm**
+
     1. Start
-    2. Initialize AWT = 0, ATAT = 0, ART = 0
     
+    2. Initialize AWT = 0, ATAT = 0, ART = 0
+        
     3. Processes arrive at the ready queue, RQ
     
     4. Processes in RQ are sorted and assigned priority according to burst time
